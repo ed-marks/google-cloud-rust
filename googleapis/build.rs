@@ -41,6 +41,7 @@ fn generate(config: prost_build::Config, out_dir: impl AsRef<std::path::Path>) {
                 "googleapis/google/cloud/kms/v1/service.proto",
                 "googleapis/google/cloud/kms/v1/resources.proto",
                 "googleapis/google/cloud/kms/v1/ekm_service.proto",
+                "google/cloud/redis/cluster/v1/cloud_redis_cluster.proto",
             ],
             &["googleapis"], // specify the root location to search proto dependencies
         )
