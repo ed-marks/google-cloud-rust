@@ -45,6 +45,6 @@ temp-env = { version = "0.3.6", features = ["async_closure"] }
 [features]
 default = ["default-tls"]
 default-tls = ["reqwest/default-tls"]
-rustls-tls = ["reqwest/rustls-tls"]
+rustls-tls = ["reqwest/rustls-tls", "google-cloud-metadata/rustls-tls"]
 hickory-dns = ["reqwest/hickory-dns"]
 external-account = ["sha2", "path-clean", "url", "percent-encoding", "hmac", "hex"]
