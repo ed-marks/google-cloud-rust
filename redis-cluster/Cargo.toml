@@ -22,7 +22,7 @@ reqwest = {version = "0.12", features = [
   "stream",
   "multipart",
 ], default-features = false}
-reqwest-middleware = {version = "0.4", features = ["json", "multipart"]}
+reqwest-middleware = {version = "0.4", features = ["json", "multipart"], default-features = false}
 ring = "0.17"
 serde = {version = "1.0", features = ["derive"]}
 serde_json = "1.0"
@@ -58,5 +58,5 @@ default = ["default-tls", "auth"]
 default-tls = ["reqwest/default-tls", "google-cloud-auth?/default-tls"]
 external-account = ["google-cloud-auth?/external-account"]
 hickory-dns = ["reqwest/hickory-dns", "google-cloud-auth?/hickory-dns"]
-rustls-tls = ["reqwest/rustls-tls", "google-cloud-auth?/rustls-tls", "google-cloud-metadata?/rustls-tls"]
+rustls-tls = ["reqwest/rustls-tls", "google-cloud-auth?/rustls-tls"]
 trace = []
